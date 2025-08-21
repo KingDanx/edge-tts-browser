@@ -1,6 +1,6 @@
 {
-  "name": "bun-lib-template",
-  "module": "models/bun-lib-template.js",
+  "name": "@kingdanx/edge-tts-browser",
+  "module": "models/EdgeTTSBrowser.js",
   "main": "index.js",
   "version": "1.0.0",
   "date": "2025.08.19",
