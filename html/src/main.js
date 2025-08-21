@@ -7,37 +7,16 @@ const tts = new EdgeTTSBrowser();
 
 let currentFile = null;
 
-/**
- * @type {HTMLSelectElement}
- */
 const selectEl = document.querySelector("#voice-select");
-/**
-/**
- * @type {HTMLButtonElement}
- */
 const generateBtn = document.querySelector("#generate-btn");
-/**
- * @type {HTMLButtonElement}
- */
 const downloadBtn = document.querySelector("#download-btn");
-/**
- * @type {HTMLAudioElement}
- */
 const audioEl = document.querySelector("#tts-audio");
-/**
- * @type {HTMLAudioElement}
- */
 let anchorEl = document.querySelector("#anchor");
 
 const voices = await EdgeTTSBrowser.getVoices();
 
-console.log(voices);
-
 if (voices) {
   for (const v of voices) {
-    /**
-     * @type {HTMLOptionElement}
-     */
     const option = document.createElement("option");
     option.value = v.ShortName;
     option.innerText = v.FriendlyName;
@@ -66,7 +45,6 @@ generateBtn.addEventListener("click", async () => {
 
     const url = URL.createObjectURL(blob);
 
-    // Create download link
     anchorEl.href = url;
     anchorEl.download = fileName;
 
