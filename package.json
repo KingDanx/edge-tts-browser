@@ -2,16 +2,20 @@
   "name": "bun-lib-template",
   "module": "models/bun-lib-template.js",
   "main": "index.js",
-  "version": "1.0.3",
+  "version": "1.0.0",
   "date": "2025.08.19",
   "type": "module",
   "scripts": {
-    "build": "bun ./build/build.js"
+    "build": "bun ./build/build.js",
+    "html": "cd html && npm run dev"
   },
   "devDependencies": {
-    "@types/bun": "latest"
+    "@types/bun": "^1.2.20"
   },
   "peerDependencies": {
     "typescript": "^5"
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
   }
 }

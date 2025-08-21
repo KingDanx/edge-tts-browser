@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+  </head>
+  <body>
+    <h1>EdgeTTS Browser</h1>
+    <br>
+    <select id="voice-select"></select>
+    <label for="user-text">Input Text</label>
+    <textarea id="user-text" rows="4"></textarea>
+    <br>
+    <button id="generate-btn">Generate</button>
+    <br>
+    <audio src="" id="tts-audio" controls></audio>
+    <br>
+    <button id="download-btn">Download</button>
+    <a id="anchor" href="" download=""></a>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
